@@ -1,7 +1,5 @@
 # ReFlar Clean Profile Posts
 
----
-
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/reflar/clean-profile-posts.svg)](https://packagist.org/packages/reflar/clean-profile-posts)
 
 A [Flarum](http://flarum.org) extension. Removes the initial posts of discussions from the user&#39;s profile posts list
