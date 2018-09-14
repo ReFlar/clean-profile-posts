@@ -14,6 +14,7 @@ namespace Reflar\CleanProfilePosts\Listeners;
 
 use Flarum\Api\Serializer\UserBasicSerializer;
 use Flarum\Core\Post;
+use Flarum\Core\User;
 use Flarum\Event\ConfigurePostsQuery;
 use Flarum\Event\PrepareApiAttributes;
 use Illuminate\Contracts\Events\Dispatcher;
@@ -42,7 +43,12 @@ class ModifyPostsQuery
 
     public function prepareApiAttributes(PrepareApiAttributes $event) {
         if ($event->isSerializer(UserBasicSerializer::class)) {
-            $event->attributes['commentsCount'] = Post::where('number', '!=', 1)->where('hide_time', null)->where('is_approved', 1)->count();
+            /**
+             * @var $user User
+             */
+            $user = $event->model;
+
+            $event->attributes['commentsCount'] = $user->posts()->where('number', '!=', 1)->count();
         }
     }
 
