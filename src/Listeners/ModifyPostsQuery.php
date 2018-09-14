@@ -43,12 +43,7 @@ class ModifyPostsQuery
 
     public function prepareApiAttributes(PrepareApiAttributes $event) {
         if ($event->isSerializer(UserBasicSerializer::class)) {
-            /**
-             * @var $user User
-             */
-            $user = $event->model;
-
-            $event->attributes['commentsCount'] = $user->posts()->where('number', '!=', 1)->count();
+            $event->attributes['commentsCount'] = $event->model->posts()->where('number', '!=', 1)->count();
         }
     }
 
