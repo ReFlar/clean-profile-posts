@@ -3,8 +3,7 @@
 /**
  *  This file is part of reflar/clean-profile-posts.
  *
- *  Copyright (c) 2018 .
- *
+ *  Copyright (c) 2018 ReFlar
  *
  *  For the full copyright and license information, please view the LICENSE.md
  *  file that was distributed with this source code.

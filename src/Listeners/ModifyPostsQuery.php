@@ -3,8 +3,7 @@
 /**
  *  This file is part of reflar/clean-profile-posts.
  *
- *  Copyright (c) 2018 .
- *
+ *  Copyright (c) 2018 ReFlar
  *
  *  For the full copyright and license information, please view the LICENSE.md
  *  file that was distributed with this source code.
@@ -13,8 +12,6 @@
 namespace Reflar\CleanProfilePosts\Listeners;
 
 use Flarum\Api\Serializer\UserBasicSerializer;
-use Flarum\Core\Post;
-use Flarum\Core\User;
 use Flarum\Event\ConfigurePostsQuery;
 use Flarum\Event\PrepareApiAttributes;
 use Illuminate\Contracts\Events\Dispatcher;
