@@ -25,7 +25,7 @@
     "flarum-extension": {
       "title": "ReFlar Clean Profile Posts",
       "icon": {
-        "name": "file-code-o",
+        "name": "far fa-file-code",
         "backgroundColor": "#263238",
         "color": "#FFF"
       }
